@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+  background-image: url("3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+#search-bar {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+.blocks-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  flex-wrap: wrap; 
+  margin-top: 20px; 
+}
+
+.block1 {
+  flex: 0 0 calc(22% - 20px); 
+  box-sizing: border-box;
+  margin: 10px;
+  border-style: double;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  height: 800px; 
+  animation: fadeInUp 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.block1:hover {
+  transform: scale(1.1);
+}
+
+.block2 {
+  width: 100%;
+  height: auto; 
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; 
+}
+
+.block2 img {
+  max-width: 100%;
+  max-height: 70%; 
+  object-fit: cover; 
+}
+
+.download-button {
+  margin-top: auto; 
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(255, 47, 0);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nav-tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-tabs li {
+  margin: 0 10px;
+}
+
+.nav-tabs a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  background-color: rgba(128, 128, 128, 0.7);  
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-tabs a:hover {
+  background-color: rgba(128, 128, 128, 0.9);  
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-overlay">
+    <div class="search-container">
+      <input type="text" placeholder="Search..." id="search-bar">
+      <button type="button">Search</button>
+    </div>
+    <nav>
+      <ul class="nav-tabs">
+        <li><a href="STORE.html">HOME</a></li>
+        <li><a href="DOWNLOAD.html">DOWNLOAD</a></li>
+        <li><a href="POPULAR.html">POPULAR</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p style="color: red;text-align: center;"><b>RECOMENDED = "USE FDM FOR FAST AND DIRECT TORRENT DOWNLOAD NO NEED OF TORRENT THIS IS NON SPONCERED"</b></p>
+</header>
+
+<div class="blocks-container">
+  <div class="block1">
+    <div class="block2">
+      <img src="Grand Theft Auto.jpg" alt="GRAND THEFT AUTO V">
+    </div>
+    <p style="font-size: x-large; text-align: center; color: red;">Grand Theft Auto V (GTA 5)</p>
+    <p style="font-size: large;">Developed by Rockstar Games, is an action-adventure game set in the fictional state of San Andreas, featuring an open world with extensive freedom for exploration and interaction.</p>
+    <button class="download-button">Download</button>
+  </div>
+
+  <div class="block1">
+    <div class="block2">
+      <img src="HITMAN ABSOLUTION.jpg" alt="HITMAN ABSOLUTION">
+    </div>
+    <p style="font-size: x-large; text-align: center; color: red;">HITMAN ABSOLUTION</p>
+    <p style="font-size: large;">Absolution is a stealth action-adventure game developed by IO Interactive and published by Square Enix.</p>
+    <button class="download-button">Download</button>
+  </div>
+
+  <div class="block1">
+    <div class="block2">
+      <img src="RED DEAD REDEMPTION 2.jpg" alt="RED DEAD REDEMPTION 2">
+    </div>
+    <p style="font-size: x-large; text-align: center; color: red;">RED DEAD REDEMPTION 2</p>
+    <p style="font-size: large;">Red Dead Redemption 2 (RDR2) is an action-adventure game developed and published by Rockstar Games. The game follows the story of Arthur Morgan, an outlaw and member of the Van der Linde gang, as they navigate the decline of the Wild West.</p>
+    <button class="download-button">Download</button>
+  </div>
+
+  <div class="block1">
+    <div class="block2">
+      <img src="resident evil 8.jpg" alt="RESIDENT EVIL 8">
+    </div>
+    <p style="font-size: x-large; text-align: center; color: red;">RESIDENT EVIL 8</p>
+    <p style="font-size: large;">Resident Evil 8: Village is a survival horror game developed and published by Capcom. The game continues the story of Ethan Winters as he searches for his kidnapped daughter in a mysterious village filled with terrifying creatures.</p>
+    <button class="download-button">Download</button>
+  </div>
+
+  <div class="block1">
+    <div class="block2">
+      <img src="Gta triology definative edition.jpg" alt="GTA TRIOLOGY DEFINATIVE EDITION">
+    </div>
+    <p style="font-size: x-large; text-align: center; color: red;">GTA TRIOLOGY DEFINATIVE EDITION</p>
+    <p style="font-size: large;">Grand Theft Auto: The Trilogy – The Definitive Edition is a remastered collection of three iconic GTA games: GTA III, GTA: Vice City, and GTA: San Andreas. Developed by Grove Street Games and published by Rockstar Games, it features enhanced graphics, improved controls, and modernized gameplay mechanics.</p>
+    <button class="download-button">Download</button>
+  </div>
+
+  <div class="block1">
+    <div class="block2">
+      <img src="Call Of Duty Modern Warfare 2019.jpg" alt="Call Of Duty Modern Warfare 2019">
+    </div>
+    <p style="font-size: x-large; text-align: center; color: red;">Call Of Duty Modern Warfare 2019</p>
+    <p style="font-size: large;">Call of Duty: Modern Warfare is a 2019 first-person shooter video game developed by Infinity Ward and published by Activision. Serving as the sixteenth overall installment in the Call of Duty series, as well as a reboot of the Modern Warfare sub-series, it was released on October 25, 2019, for PlayStation 4, Windows, and Xbox One.</p>
+    <button class="download-button">Download</button>
+  </div>
+
+  <div class="block1">
+    <div class="block2">
+      <img src="Call Of Duty Modern Warfare 2 .jpg" alt="Call Of Duty Modern Warfare 2">
+    </div>
+    <p style="font-size: x-large; text-align: center; color: red;">Call Of Duty Modern Warfare 2</p>
+    <p style="font-size: large;">Call of Duty: Modern Warfare II is a 2022 first-person shooter game developed by Infinity Ward and published by Activision. It is the nineteenth installment of the Call of Duty series, serving as a sequel to the 2019 reboot of the Modern Warfare sub-series.</p>
+    <button class="download-button">Download</button>
+  </div>
+
+  <div class="block1">
+    <div class="block2">
+      <img src="Call Of Duty Modern Warfare 3.jpg" alt="Call Of Duty Modern Warfare 3">
+    </div>
+    <p style="font-size: x-large; text-align: center; color: red;">Call Of Duty Modern Warfare 3</p>
+    <p style="font-size: large;">Call of Duty: Modern Warfare 3 is a 2011 first-person shooter video game, jointly developed by Infinity Ward and Sledgehammer Games, and published by Activision. It is the third and final installment in the original Modern Warfare saga, a direct sequel to 2009's Call of Duty: Modern Warfare 2.</p>
+    <button class="download-button">Download</button>
+  </div>
+</div>
+
+</body>
+</html>

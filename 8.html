@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Parts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        .content {
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .link-item {
+            display: flex;
+            flex-direction: column;
+            background-color: #ff5252; 
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+            max-width: 800px; 
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            overflow-wrap: break-word; 
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .link-item:hover {
+            transform: scale(1.05);
+            background-color: #ff0000; 
+        }
+        .copy-button {
+            background-color: white;
+            color: #ff5252; 
+            border: 1px solid #ff5252; 
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .copy-button:hover {
+            background-color: #ff5252; 
+            color: white;
+        }
+    </style>
+    <script>
+        function copyToClipboard(link) {
+            navigator.clipboard.writeText(link).then(() => {
+                alert('Link copied to clipboard');
+            }).catch(err => {
+                alert('Failed to copy link: ' + err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <h1>RESIDENT EVIL 2 REMAKE</h1>
+        <div class="button-container">
+            <!-- Part 1 -->
+            <div class="link-item">
+                <div style="word-wrap: break-word;">
+                    RESIDENT EVIL 2 REMAKE  = 
+                    magnet:?xt=urn:btih:52817594826132283ae36310746620823a4ffe69&dn=rutor.info_Resident+Evil+2+%2F+Biohazard+RE%3A2+-+Deluxe+Edition+%5Bv+20220613+%2B+12+DLCs+%2B+Win7+Fix%5D+%282019%29+PC+%7C+RePack+от+FitGirl&tr=udp://opentor.net:6969&tr=http://retracker.local/announce
+                </div>
+                <button class="copy-button" onclick="copyToClipboard('magnet:?xt=urn:btih:52817594826132283ae36310746620823a4ffe69&dn=rutor.info_Resident+Evil+2+%2F+Biohazard+RE%3A2+-+Deluxe+Edition+%5Bv+20220613+%2B+12+DLCs+%2B+Win7+Fix%5D+%282019%29+PC+%7C+RePack+от+FitGirl&tr=udp://opentor.net:6969&tr=http://retracker.local/announce')">Copy</button>
+            </div>
+            <div><h1 style="color: rgb(255, 0, 149);font-size: xx-large;">NOTE = "THIS LINK IS MAGNET IT NEEDS THE FDM OR SOFTWARE LIKE THIS AND THIS IS NOT SPONSORED NOTE"</h1></div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('2.jpg') no-repeat center center/cover;
+            background-attachment: fixed; 
+        }
+
+        .header-overlay {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .animated-content {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            margin-bottom: 20px;
+        }
+
+        .header-overlay:hover .animated-content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .animated-content h1 {
+            color: #ff5733; 
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .animated-content p {
+            color: #f0f0f0;
+            font-size: 20px;
+            line-height: 1.6;
+            margin: 10px 0;
+            padding:0 20px; 
+        }
+
+        .animated-content p:nth-child(2),
+        .animated-content p:nth-child(4) {
+            font-style: italic;
+            color: #cccccc; 
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+        }
+
+        #search-bar {
+            width: 300px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.6in; 
+        }
+
+        .nav-tabs {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-tabs li {
+            margin: 0 10px;
+        }
+
+        .nav-tabs a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            background-color: rgba(128, 128, 128, 0.7);  
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-tabs a:hover {
+            background-color: rgba(128, 128, 128, 0.9);  
+        }
+
+        .additional-content {
+            position: absolute;
+            top: calc(50% + 1.6in); 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            text-align: center;
+        }
+
+        .additional-content h2 {
+            color: #ffffff; 
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .additional-content p {
+            color: #f0f0f0; 
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .additional-content p:nth-child(2),
+        .additional-content p:nth-child(4) {
+            font-style: italic;
+            color: #cccccc; 
+        }
+
+        .copyright {
+            color: #cccccc;
+            font-size: 14px;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Default styles */
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    /* Mobile styles */
+    header {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Media query for desktop PCs */
+@media only screen and (min-width: 601px) {
+    /* Desktop styles */
+    header {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto; /* Center content */
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+        <div class="header-overlay">
+            <div class="animated-content">
+                <h1>Welcome to Our Gaming Website</h1>
+                <p>Explore the latest in gaming and enjoy our curated collection of games.</p>
+                <p>Skip the searching - download games directly from our secure servers.</p>
+                <p>Stay updated with new releases and exclusive content.</p>
+                <p style="color: red;">RECOMMENDED = "USE FDM FOR FAST AND DIRECT TORRENT DOWNLOAD NO NEED OF TORRENT THIS IS NON-SPONSORED"</p>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." id="search-bar">
+                <button type="button">Search</button>
+            </div>
+            <nav>
+                <ul class="nav-tabs">
+                    <li><a href="STORE.html">HOME</a></li>
+                    <li><a href="DOWNLOAD.html">DOWNLOAD</a></li>
+                    <li><a href="POPULAR.html">POPULAR</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="additional-content">
+        <h2>About Us</h2>
+        <p>We are passionate about gaming and strive to provide the best experience for our users.</p>
+        <p>Our mission is to make gaming accessible and enjoyable for everyone.</p>
+        <p>Join us in our journey to explore the endless possibilities of gaming!</p>
+        <p>We are making the links of games to direct download and no waiting time.</p>
+        <p>But if we don't get the perfect download link, we will give the direct download page link of other websites.</p>
+        <p class="copyright">© 2024 Gaming Website. All rights reserved.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+  background-image: url("1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.block1 {
+  border-style: double;
+  padding: 20px;
+  margin: 80px auto; 
+  background: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  width: 80%; 
+  transition: transform 0.3s ease; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.block1:hover {
+  transform: scale(1.05);
+}
+
+.block2 {
+  border-style: double;
+  width: 30%;
+  height: auto;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.content {
+  width: 65%; 
+  padding: 20px;
+}
+
+.download-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(255, 47, 0);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search-bar {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-tabs li {
+  margin: 0 10px;
+}
+
+.nav-tabs a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  background-color: rgba(128, 128, 128, 0.7);  
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-tabs a:hover {
+  background-color: rgba(128, 128, 128, 0.9);  
+}
+.list{
+  /* display: block; */
+}
+     
+
+        
+</style>
+</head>
+<body>
+<header>
+  <div class="header-overlay">
+    <div class="search-container">
+      <input type="text" placeholder="Search..." id="search-bar">
+      <button type="button">Search</button>
+    </div>
+      <nav>
+      <ul class="nav-tabs">
+        <li><a href="STORE.html">HOME</a></li>
+        <li><a href="DOWNLOAD.html">DOWNLOAD</a></li>
+        <li><a href="POPULAR.html">POPULAR</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p style="color: red;text-align: center;"><b>RECOMENDED = "USE FDM FOR FAST AND DIRECT TORRENT DOWNLOAD NO NEED OF TORRENT THIS IS NON SPONCERED"</b></p>
+</header>
+
+<div class="block1">
+  <h1>1</h1>
+  <div class="block2">
+    <img src="Grand Theft Auto.jpg" alt="GRAND THEFT AUTO V">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Grand Theft Auto V (GTA 5)</p>
+    <p style="font-size: x-large;">Developed by Rockstar Games, is an action-adventure game set in the fictional state of San Andreas, featuring an open world with extensive freedom for exploration and interaction.</p>
+    <a  href="#" onclick="gotoLink(this)" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>2</h1>
+  <div class="block2">
+    <img src="gta-4.jpg" alt="Grand Theft Auto IV">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Grand Theft Auto IV Complete Edition</p>
+    <p style="font-size: x-large;">Grand Theft Auto IV is an action-adventure game developed by Rockstar North and published by Rockstar Games. It was released in 2008 for PC.</p>
+    <a href="2.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>3</h1>
+  <div class="block2">
+    <img src="hitman-2016.jpg" alt="Hitman (2016)">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Hitman (2016)</p>
+    <p style="font-size: x-large;">Hitman is a stealth video game developed by IO Interactive and published by Square Enix. Released in 2016, it features episodic gameplay with creative ways to eliminate targets.</p>
+    <a href="3.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>4</h1>
+  <div class="block2">
+    <img src="hitman-2.jpg" alt="Hitman 2 (2018)">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Hitman 2 (2018)</p>
+    <p style="font-size: x-large;">Hitman 2 continues the storyline of its predecessor, offering more intricate levels and new gameplay features. Developed by IO Interactive and published by Warner Bros. Interactive Entertainment.</p>
+    <a href="4.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>5</h1>
+  <div class="block2">
+    <img src="hitman-3.jpg" alt="Hitman 3 (2021)">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Hitman 3 (2021)</p>
+    <p style="font-size: x-large;">Hitman 3 concludes the World of Assassination trilogy, allowing players to explore new locations and use new assassination methods. Developed and published by IO Interactive.</p>
+    <a href="5.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>6</h1>
+  <div class="block2">
+    <img src="HITMAN ABSOLUTION.jpg" alt="HITMAN ABSOLUTION">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">HITMAN ABSOLUTION</p>
+    <p style="font-size: x-large;">Absolution is a stealth action-adventure game developed by IO Interactive and published by Square Enix</p>
+    <a href="6.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>7</h1>
+  <div class="block2">
+    <img src="RED DEAD REDEMPTION 2.jpg" alt="RED DEAD REDEMPTION 2">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">RED DEAD REDEMPTION 2</p>
+    <p style="font-size: x-large;">Red Dead Redemption 2 (RDR2) is an action-adventure game developed and published by Rockstar Games. The game follows the story of Arthur Morgan, an outlaw and member of the Van der Linde gang, as they navigate the decline of the Wild West</p>
+    <a href="7.html" class="download-button">Download</a>  
+  </div>
+</div>
+
+<div class="block1">
+  <h1>8</h1>
+  <div class="block2">
+    <img src="resident-evil-2-remake.jpg" alt="Resident Evil 2 Remake">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Resident Evil 2 Remake</p>
+    <p style="font-size: x-large;">Resident Evil 2 is a survival horror game developed and published by Capcom. The remake offers updated graphics, gameplay mechanics, and a reimagined storyline of the original 1998 game.</p>
+    <a href="8.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>9</h1>
+  <div class="block2">
+    <img src="resident-evil-4-remake.jpg" alt="Resident Evil 4 Remake">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Resident Evil 4 Remake</p>
+    <p style="font-size: x-large;">Resident Evil 4 is a survival horror game originally released in 2005. The remake enhances graphics and gameplay while retaining the intense action and horror elements of the original.</p>
+    <a href="9.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>10</h1>
+  <div class="block2">
+    <img src="resident-evil-6.jpg" alt="Resident Evil 6">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Resident Evil 6</p>
+    <p style="font-size: x-large;">Resident Evil 6 is an action-packed survival horror game developed and published by Capcom. It features multiple playable characters and intertwining storylines set in various global locations.</p>
+    <a href="10.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>11</h1>
+  <div class="block2">
+    <img src="resident-evil-7.jpg" alt="Resident Evil 7">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Resident Evil 7</p>
+    <p style="font-size: x-large;">Resident Evil 7: Biohazard is a survival horror game developed and published by Capcom. It returns to the series' survival horror roots with a first-person perspective and a new storyline.</p>
+    <a href="11.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>12</h1>
+  <div class="block2">
+    <img src="resident evil 8.jpg" alt="RESIDENT EVIL 8">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">RESIDENT EVIL 8</p>
+    <p style="font-size: x-large;">Resident Evil 8: Village is a survival horror game developed and published by Capcom. The game continues the story of Ethan Winters as he searches for his kidnapped daughter in a mysterious village filled with terrifying creatures.</p>
+    <a href="12.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>13</h1>
+  <div class="block2">
+    <img src="LA NORIE .jpg" alt="LA NORIE">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">LA NORIE</p>
+    <p style="font-size: x-large;">LA NORIE, developed by Rockstar Games. Follows the journey  a detective in crime filled with dangers.</p>
+    <a href="13.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>14</h1>
+  <div class="block2">
+    <img src="The Last of Us Part I.jpg" alt="The Last of Us Part I">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">The Last of Us Part I</p>
+    <p style="font-size: x-large;">The Last of Us, developed by Naughty Dog. Follows Ellie's journey in a post-apocalyptic world filled with dangers and moral dilemmas.</p>
+    <a href="14.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>15</h1>
+  <div class="block2">
+    <img src="God of War 2018.jpg" alt="God of War 2018">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">God of War</p>
+    <p style="font-size: x-large;">An action-adventure game developed by Santa Monica Studio. Follows Kratos and his son, Atreus, as they navigate the world of Norse mythology.</p>
+    <a href="15.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>16</h1>
+  <div class="block2">
+    <img src="ROBLOX.jpg" alt="ROBLOX">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">FIFA 24</p>
+    <p style="font-size: x-large;">A simulation video game published. Features various game modes and updated gameplay mechanics.</p>
+    <a href="https://www.roblox.com/download" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>17</h1>
+  <div class="block2">
+    <img src="bad-company-2.jpg" alt="Battlefield: Bad Company 2">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Battlefield: Bad Company 2</p>
+    <p style="font-size: x-large;">Released in 2010, part of the Bad Company series, developed by DICE.</p>
+    <a href="16.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>18</h1>
+  <div class="block2">
+    <img src="battlefield-3.jpg" alt="Battlefield 3">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Battlefield 3</p>
+    <p style="font-size: x-large;">Released in 2011, modern warfare setting, developed by DICE.</p>
+    <a href="https://drive.usercontent.google.com/download?id=0B6W2UeNFLsDHb2kyd19DaUpxSG8&export=download&authuser=0&confirm=t&uuid=6267248e-0693-4884-88c0-263282195c5c&at=APZUnTVr1cyYO8_m_OgqXIJwF6-p%3A1719421886138" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>19</h1>
+  <div class="block2">
+    <img src="battlefield-4.jpg" alt="Battlefield 4">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Battlefield 4</p>
+    <p style="font-size: x-large;">Released in 2013, modern warfare setting, developed by DICE.</p>
+    <a href="https://firebasestorage.googleapis.com/v0/b/battlefield-4-001.appspot.com/o/Battlefield_4.zip?alt=media&token=530c2298-cc2e-4041-b432-7d1abf20d74b" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>20</h1>
+  <div class="block2">
+    <img src="battlefield-1.jpg" alt="Battlefield 1 (2016)">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Battlefield 1 (2016)</p>
+    <p style="font-size: x-large;">Released in 2016, set during World War I, developed by DICE.</p>
+    <a href="magnet:?xt=urn:btih:18be535120d94137f96254a7c05ffe84433c883c" class="download-button">Download</a>
+    <p style="color: red;">NOTE= THIS DOWNLAOD BUTTON HAS MAGNET LINK USE FDM .(THIS IS NON SPONCERED)</p>
+  </div>
+
+</div>
+
+<div class="block1">
+  <h1>21</h1>
+  <div class="block2">
+    <img src="battlefield-5.jpg" alt="Battlefield V">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Battlefield V</p>
+    <p style="font-size: x-large;">Released in 2018, returning to World War II, developed by DICE.</p>
+    <a href="magnet:?xt=urn:btih:69C8FB08CC5F49544D6305E71C3BFC8475F381C7&dn=Battlefield%20V%20%5bFitGirl%20Repack%5d&tr=udp%3a%2f%2f9.rarbg.to%3a2770%2fannounce&tr=udp%3a%2f%2feddie4.nl%3a6969%2fannounce&tr=udp%3a%2f%2fshadowshq.yi.org%3a6969%2fannounce&tr=udp%3a%2f%2fthetracker.org%3a80%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337&tr=udp%3a%2f%2ftracker.piratepublic.com%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.zer0day.to%3a1337&tr=udp%3a%2f%2f9.rarbg.com%3a2710%2fannounce&tr=udp%3a%2f%2fexplodie.org%3a6969%2fannounce&tr=udp%3a%2f%2ftracker1.wasabii.com.tw%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&tr=udp%3a%2f%2ftracker.cypherpunks.ru%3a6969%2fannounce&tr=udp%3a%2f%2fp4p.arenabg.com%3a1337%2fannounce" class="download-button">Download</a>
+    <p style="color: red;">NOTE= THIS DOWNLAOD BUTTON HAS MAGNET LINK USE FDM .(THIS IS NON SPONCERED)</p>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>22</h1>
+  <div class="block2">
+    <img src="resident evil 3.jpg" alt="resident-evil-3-remake">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">resident-evil-3-remake</p>
+    <p style="font-size: x-large;">A sequel to resident-evil-2-remake.</p>
+    <a href="17.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>23</h1>
+  <div class="block2">
+    <img src="Cyberpunk 2077.jpg" alt="Cyberpunk 2077">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Cyberpunk 2077</p>
+    <p style="font-size: x-large;">An open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour, and body modification. Developed by CD Projekt Red.</p>
+    <a href="last of us 2.JPG" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>24</h1>
+  <div class="block2">
+    <img src="assassins-creed.jpg" alt="Assassin's Creed">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed</p>
+    <p style="font-size: x-large;">The first game in the series, Assassin's Creed, developed by Ubisoft Montreal and released in 2007.</p>
+    <a href="https://files.alltypehacks.in/abb34e0cc7165d02?download_token=1303359e33fc89072d4be5eaf0995fe2f5c3870680bc84f67c828100f83cdae2" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>25</h1>
+  <div class="block2">
+    <img src="assassins-creed-2.jpg" alt="Assassin's Creed II">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed II</p>
+    <p style="font-size: x-large;">The sequel to Assassin's Creed, released in 2009, developed by Ubisoft Montreal.</p>
+    <a href="https://thefileslocker.net/4k99n7eyi02x.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>26</h1>
+  <div class="block2">
+    <img src="assassins-creed-brotherhood.jpg" alt="Assassin's Creed: Brotherhood">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed: Brotherhood</p>
+    <p style="font-size: x-large;">Released in 2010, continuing the story of Ezio Auditore da Firenze, developed by Ubisoft Montreal.</p>
+    <a href="https://thefileslocker.net/efg94xnizr7t.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>27</h1>
+  <div class="block2">
+    <img src="assassins-creed-revelations.jpg" alt="Assassin's Creed: Revelations">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed: Revelations</p>
+    <p style="font-size: x-large;">Released in 2011, concluding Ezio's story, developed by Ubisoft Montreal.</p>
+    <a href="https://thefileslocker.net/76lw1hoibi2q.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>28</h1>
+  <div class="block2">
+    <img src="assassins-creed-3.jpg" alt="Assassin's Creed III">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed III</p>
+    <p style="font-size: x-large;">Set during the American Revolution, released in 2012, developed by Ubisoft Montreal.</p>
+    <a href="https://thefileslocker.net/c0ig8npreeqx.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>29</h1>
+  <div class="block2">
+    <img src="assassins-creed-4-black-flag.jpg" alt="Assassin's Creed IV: Black Flag">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed IV: Black Flag</p>
+    <p style="font-size: x-large;">Focuses on piracy in the Caribbean, released in 2013, developed by Ubisoft Montreal.</p>
+    <a href="https://server144.safefilehosting.com:22368/ipcgames.com/download.php?url_str=https%3A%2F%2Fserver144.safefilehosting.com%2FiGetintopc.com%2Fdownload.php%3Ffilename%3Dipcgames.com_Assassins_Creed_IV_Black_Flag.zip%26expires%3D1721656437%26signature%3D87c0f474d1da34165d473b0bcfaa1291&filename=ipcgames.com_Assassins_Creed_IV_Black_Flag.zip&sdomain=ipcgames.com" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>30</h1>
+  <div class="block2">
+    <img src="assassins-creed-rogue.jpg" alt="Assassin's Creed Rogue">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed Rogue</p>
+    <p style="font-size: x-large;">Released in 2014, players experience the life of Shay Patrick Cormac during the Seven Years' War.</p>
+    <a href="18.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>31</h1>
+  <div class="block2">
+    <img src="assassins-creed-unity.jpg" alt="Assassin's Creed Unity">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed Unity</p>
+    <p style="font-size: x-large;">Set during the French Revolution, released in 2014, developed by Ubisoft Montreal.</p>
+    <a href="19.html" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>32</h1>
+  <div class="block2">
+    <img src="assassins-creed-syndicate.jpg" alt="Assassin's Creed Syndicate">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed Syndicate</p>
+    <p style="font-size: x-large;">Set in Victorian London, released in 2015, developed by Ubisoft Quebec.</p>
+    <a href="magnet:?xt=urn:btih:31D6E5FD572688BC51460E86FDD83B1BE5651F6E" class="download-button">Download</a>
+    <p style="color: red;">NOTE= THIS DOWNLAOD BUTTON HAS MAGNET LINK USE FDM .(THIS IS NON SPONCERED)</p>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>33</h1>
+  <div class="block2">
+    <img src="assassins-creed-origins.jpg" alt="Assassin's Creed Origins">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed Origins</p>
+    <p style="font-size: x-large;">Set in Ancient Egypt, released in 2017, developed by Ubisoft Montreal.</p>
+    <a href="magnet:?xt=urn:btih:866b4a3cf897c5c1d0313d22038cccc69acd7df0&dn=rutor.info_Assassin%27s+Creed%3A+Origins+-+Gold+Edition+%5Bv+1.51+%2B+DLCs%5D+%282017%29+PC+%7C+RePack+%D0%BE%D1%82+FitGirl&tr=udp://opentor.org:2710&tr=udp://opentor.org:2710&tr=http://retracker.local/announce" class="download-button">Download</a>
+    <p style="color: red;">NOTE= THIS DOWNLAOD BUTTON HAS MAGNET LINK USE FDM .(THIS IS NON SPONCERED)</p>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>34</h1>
+  <div class="block2">
+    <img src="assassins-creed-odyssey.jpg" alt="Assassin's Creed Odyssey">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed Odyssey</p>
+    <p style="font-size: x-large;">Set in Ancient Greece, released in 2018, developed by Ubisoft Quebec.</p>
+    <a href="https://www.gamestorrents.fm/wp-content/uploads/files/1553962349-Assassin's Creed Odyssey 1.0.6  [wWw.GamesTorrents.TV].torrent" class="download-button">Download</a>
+    <p style="color: red;">NOTE= THIS DOWNLAOD BUTTON HAS MAGNET LINK USE FDM .(THIS IS NON SPONCERED)</p>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>35</h1>
+  <div class="block2">
+    <img src="Assassin's Creed Valhalla.jpg" alt="Assassin's Creed Valhalla">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's Creed Valhalla</p>
+    <p style="font-size: x-large;">An action RPG developed by Ubisoft, following Eivor, a Viking raider, as they explore and conquer the world of 9th-century England.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>36</h1>
+  <div class="block2">
+    <img src="assassins-creed-mirage.jpg" alt="Assassin's Creed mirage">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Assassin's mirage</p>
+    <p style="font-size: x-large;"> Assassin's Creed Mirage is set in Baghdad during the Islamic Golden Age, primarily during the Anarchy at Samarra, which was a period of extreme internal instability during the reign of the Abbasid Caliphate.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>37</h1>
+  <div class="block2">
+    <img src="The Elder Scrolls V Skyrim.jpg" alt="The Elder Scrolls V: Skyrim">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">The Elder Scrolls V: Skyrim</p>
+    <p style="font-size: x-large;">An open-world RPG developed by Bethesda Game Studios, featuring a vast world to explore, filled with dragons, magic, and ancient lore.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>38</h1>
+  <div class="block2">
+    <img src="Apex Legends.jpg" alt="Apex Legends">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Apex Legends</p>
+    <p style="font-size: x-large;">A free-to-play battle royale game developed by Respawn Entertainment and published by Electronic Arts. Known for its fast-paced gameplay and unique character abilities.</p>
+    <a href="https://lnk.to/apex-legends-steam" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>39</h1>
+  <div class="block2">
+    <img src="Valorant.jpg" alt="Valorant">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Valorant</p>
+    <p style="font-size: x-large;">A tactical first-person shooter game developed and published by Riot Games. Known for its blend of precise shooting mechanics and character-based abilities.</p>
+    <a href="https://playvalorant.com/en-us/download/" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>40</h1>
+  <div class="block2">
+    <img src="League of Legends.jpg" alt="League of Legends">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">League of Legends</p>
+    <p style="font-size: x-large;">A multiplayer online battle arena (MOBA) game developed and published by Riot Games. One of the most popular esports games worldwide.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>41</h1>
+  <div class="block2">
+    <img src="Counter-Strike 2.jpg" alt="Counter-Strike 2">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Counter-Strike:2</p>
+    <p style="font-size: x-large;">A multiplayer first-person shooter game developed by Valve and Hidden Path Entertainment. Known for its competitive gameplay and tactical team-based action.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>42</h1>
+  <div class="block2">
+    <img src="Overwatch.jpg" alt="Overwatch">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Overwatch</p>
+    <p style="font-size: x-large;">A team-based multiplayer first-person shooter developed and published by Blizzard Entertainment. Known for its diverse roster of heroes and objective-based gameplay.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>43</h1>
+  <div class="block2">
+    <img src="World of Warcraft.jpg" alt="World of Warcraft">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">World of Warcraft</p>
+    <p style="font-size: x-large;">A massively multiplayer online role-playing game (MMORPG) developed by Blizzard Entertainment. Set in the fantasy world of Azeroth, it is one of the most iconic and influential MMORPGs.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>44</h1>
+  <div class="block2">
+    <img src="Fortnite.jpg" alt="Fortnite">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Fortnite</p>
+    <p style="font-size: x-large;">A battle royale game developed by Epic Games. Known for its building mechanics and colorful, cartoon-like graphics.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>45</h1>
+  <div class="block2">
+    <img src="Call Of Duty Modern Warfare 2019.jpg" alt="Call Of Duty Modern Warfare 2019">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Call Of Duty Modern Warfare 2019</p>
+    <p style="font-size: x-large;">Call of Duty: Modern Warfare is a 2019 first-person shooter video game developed by Infinity Ward and published by Activision. Serving as the sixteenth overall installment in the Call of Duty series, as well as a reboot of the Modern Warfare sub-series, it was released on October 25, 2019, for PlayStation 4, Windows, and Xbox One.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>46</h1>
+  <div class="block2">
+    <img src="Call Of Duty Modern Warfare 2 .jpg" alt="Call Of Duty Modern Warefare 2">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Call Of Duty Modern Warfare 2</p>
+    <p style="font-size: x-large;">Call of Duty: Modern Warfare II is a 2022 first-person shooter game developed by Infinity Ward and published by Activision. It is the nineteenth installment of the Call of Duty series, serving as a sequel to the 2019 reboot of the Modern Warfare sub-series.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>47</h1>
+  <div class="block2">
+    <img src="Call Of Duty Modern Warfare 3.jpg" alt="Call Of Duty Modern Warfare 3">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Call Of Duty Modern Warfare 3</p>
+    <p style="font-size: x-large;">Call of Duty: Modern Warfare 3 is a 2011 first-person shooter video game, jointly developed by Infinity Ward and Sledgehammer Games, and published by Activision. It is the third and final installment in the original Modern Warfare saga, a direct sequel to 2009's Call of Duty: Modern Warfare 2.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+<div class="block1">
+  <h1>48</h1>
+  <div class="block2">
+    <img src="Among Us.jpg" alt="Among Us">
+  </div>
+  <div class="content">
+    <p style="font-size: x-large;color:red;">Among Us</p>
+    <p style="font-size: x-large;">An online multiplayer social deduction game developed and published by InnerSloth. Players work together to complete tasks on a spaceship, while impostors attempt to sabotage their efforts.</p>
+    <a href="" class="download-button">Download</a>
+  </div>
+</div>
+
+</div>
+
+<div>
+
+</div>
+<script>
+  function gotoLink(){
+
+    
+    window.open("https://firebasestorage.googleapis.com/v0/b/grand-theft-auto-v-repac-4f4dc.appspot.com/o/Oceanofgames.com_Grand_Theft_Auto_V_Repack.zip?alt=media&token=cd2bc517-b08e-4e23-8baa-2c9930711652")
+  }
+</script>
+</body>
+</html>
